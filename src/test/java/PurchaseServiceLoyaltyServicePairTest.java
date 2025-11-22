@@ -38,7 +38,7 @@ class PurchaseServiceLoyaltyServicePairTest {
         c4 = new Customer("C4", "Fatma");
         c5 = new Customer("C5", "Mehmet");
 
-        // ⭐ CustomerRepository mock’u için en az 5 farklı when-thenReturn davranışı
+        // 5 different when - thenReturn behavior
         when(customerRepository.findById("C1")).thenReturn(c1);
         when(customerRepository.findById("C2")).thenReturn(c2);
         when(customerRepository.findById("C3")).thenReturn(c3);

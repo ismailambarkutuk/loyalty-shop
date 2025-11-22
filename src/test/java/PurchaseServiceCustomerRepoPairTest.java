@@ -48,7 +48,7 @@ class PurchaseServiceCustomerRepoPairTest {
 
         purchaseService = new PurchaseService(customerRepository, loyaltyService);
 
-        // 5 different when - thenReturn behaviour
+        // 5 different when - thenReturn behavior
         when(loyaltyService.applyPoints("C1", 100.0)).thenReturn(10);
         when(loyaltyService.applyPoints("C1", 50.0)).thenReturn(5);
         when(loyaltyService.applyPoints("C2", 20.0)).thenReturn(2);
