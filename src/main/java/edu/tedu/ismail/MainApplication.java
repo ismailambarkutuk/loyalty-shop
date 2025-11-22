@@ -16,7 +16,7 @@ public class MainApplication {
 
         // 4) Bir alışveriş simüle et
         double amount = 120.0; // 120 TL
-        PurchaseService.PurchaseResult result =
+        PurchaseResult result =
                 purchaseService.purchase(customer.getId(), amount);
 
         // 5) Sonuçları ekrana yaz
